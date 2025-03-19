@@ -1,0 +1,50 @@
+{
+  "site_title": "Dr. Nicola Vaia - Chirurgo Plastico",
+  "site_description": "Chirurgia Plastica Ricostruttiva ed Estetica",
+
+  "menu_chi_sono": "Chi Sono",
+  "menu_lipedema": "Chirurgia del Lipedema",
+  "menu_ricostruttiva": "Chirurgia Ricostruttiva",
+  "menu_estetica": "Chirurgia Estetica",
+  "menu_medicina": "Medicina Estetica",
+  "menu_contatti": "Contatti",
+
+  "header_title": "Dr. Nicola Vaia",
+  "header_subtitle": "Chirurgia Plastica Ricostruttiva ed Estetica",
+
+  "about_title": "Professionalità e Competenza",
+  "about_subtitle": "La tua salute e il tuo benessere sono la mia priorità",
+  "about_content": "Mi dedico ad aiutare i pazienti a raggiungere i loro obiettivi estetici e funzionali attraverso procedure chirurgiche all'avanguardia e un'attenzione personalizzata. Con anni di esperienza e formazione specialistica, offro una combinazione di competenza tecnica e sensibilità artistica per garantire risultati naturali e armonici. La mia filosofia si basa sul creare un rapporto di fiducia con ogni paziente, ascoltando attentamente le loro esigenze e fornendo soluzioni su misura.",
+
+  "lipedema_title": "Chirurgia del Lipedema",
+  "lipedema_subtitle": "Trattamenti specializzati per il lipedema",
+  "lipedema_content": "Il lipedema è una condizione cronica caratterizzata dall'accumulo anomalo di tessuto adiposo nelle gambe e talvolta nelle braccia. Offro trattamenti chirurgici avanzati per il lipedema, tra cui la liposuzione tumescente, per ridurre il dolore, migliorare la mobilità e l'aspetto estetico. La diagnosi precoce e un approccio multidisciplinare sono fondamentali per gestire efficacemente questa condizione e migliorare la qualità della vita dei pazienti.",
+
+  "ricostruttiva_title": "Chirurgia Ricostruttiva",
+  "ricostruttiva_subtitle": "Ripristino della forma e della funzionalità",
+  "ricostruttiva_content": "La chirurgia ricostruttiva mira a ripristinare la forma e la funzionalità di strutture corporee danneggiate da traumi, malattie o difetti congeniti. Mi specializzo in procedure ricostruttive avanzate, tra cui la ricostruzione del seno dopo mastectomia, la correzione di cicatrici, la ricostruzione dopo trauma e la correzione di difetti congeniti. Utilizzo tecniche innovative e un approccio personalizzato per garantire risultati ottimali e migliorare significativamente la qualità della vita dei miei pazienti.",
+
+  "estetica_title": "Chirurgia Estetica",
+  "estetica_subtitle": "Bellezza naturale e armoniosa",
+  "estetica_content": "La chirurgia estetica può contribuire significativamente a migliorare l'immagine corporea e la fiducia in sé stessi. Offro una vasta gamma di procedure estetiche del viso e del corpo, tra cui rinoplastica, lifting facciale, blefaroplastica, mastoplastica additiva e riduttiva, addominoplastica e liposuzione. Il mio approccio si basa sul rispetto dell'individualità di ciascun paziente, proponendo soluzioni personalizzate che valorizzano la bellezza naturale e preservano l'armonia delle proporzioni.",
+
+  "medicina_title": "Medicina Estetica",
+  "medicina_subtitle": "Trattamenti non chirurgici per il ringiovanimento",
+  "medicina_content": "La medicina estetica offre soluzioni non chirurgiche o minimamente invasive per il ringiovanimento e il miglioramento dell'aspetto. I trattamenti includono filler dermici, tossina botulinica, peeling chimici, biorivitalizzazione e altri trattamenti avanzati. Questi interventi consentono di ottenere risultati significativi con tempi di recupero minimi, rappresentando un'opzione ideale per chi desidera migliorare il proprio aspetto senza ricorrere alla chirurgia o come complemento a procedure chirurgiche.",
+
+  "contatti_title": "Prenota una Consulenza",
+  "contatti_subtitle": "Sono qui per rispondere alle tue domande",
+  "contatti_content": "Se desideri maggiori informazioni o vuoi prenotare una consulenza, non esitare a contattarmi. Sarò lieto di discutere le tue esigenze specifiche e fornirti tutte le informazioni necessarie sulle procedure disponibili, i tempi di recupero e i risultati attesi.",
+
+  "form_nome": "Nome",
+  "form_cognome": "Cognome",
+  "form_email": "Email",
+  "form_telefono": "Telefono",
+  "form_messaggio": "Messaggio",
+  "form_invia": "Invia",
+
+  "footer_copyright": "© 2025 Dr. Nicola Vaia - Tutti i diritti riservati",
+  "footer_privacy": "Privacy Policy",
+  "footer_cookie": "Cookie Policy",
+  "footer_termini": "Termini e Condizioni"
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dr. Nicola Vaia - Chirurgia Plastica Ricostruttiva ed Estetica. Specialista in chirurgia del lipedema, chirurgia ricostruttiva ed estetica e medicina estetica.">
+    <meta name="keywords" content="chirurgo plastico, chirurgia estetica, chirurgia ricostruttiva, lipedema, medicina estetica">
+    <meta name="author" content="Dr. Nicola Vaia">
+    <base href="/">
+
+    <title data-i18n="site_title">Dr. Nicola Vaia - Chirurgo Plastico</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+          rel="stylesheet"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="p-0 m-0">
+<!-- Header -->
+<header class="fixed-top w-100 p-0">
+    <div class="row h-100 d-flex align-items-center">
+        <div class="col">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                        <div class="justify-content-center logo-literal">
+                            <h1>
+                                <span data-i18n="header_title">Dr. Nicola Vaia</span>
+                                <div data-i18n="header_subtitle">Chirurgia Plastica Ricostruttiva ed Estetica</div>
+                            </h1>
+                        </div>
+
+                        <div class="language-selector">
+                            <select class="form-select" id="language-selector">
+                                <option value="it">IT</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Side Menu -->
+<div class="offcanvas offcanvas-start side-menu" tabindex="-1" id="sideMenu"
+     aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="sideMenuLabel">Dr. Nicola Vaia</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#about" class="nav-link" data-i18n="menu_chi_sono">
+                    Chi Sono
+                </a>
+            </li>
+            <li>
+                <a href="#chirurgia-del-lipedema" class="nav-link" data-i18n="menu_lipedema">
+                    Chirurgia del Lipedema
+                </a>
+            </li>
+            <li>
+                <a href="#chirurgia-ricostruttiva" class="nav-link" data-i18n="menu_ricostruttiva">
+                    Chirurgia Ricostruttiva
+                </a>
+            </li>
+            <li>
+                <a href="#chirurgia-estetica" class="nav-link" data-i18n="menu_estetica">
+                    Chirurgia Estetica
+                </a>
+            </li>
+            <li>
+                <a href="#medicina-estetica" class="nav-link" data-i18n="menu_medicina">
+                    Medicina Estetica
+                </a>
+            </li>
+            <li>
+                <a href="#contacts" class="nav-link" data-i18n="menu_contatti">
+                    Contatti
+                </a>
+            </li>
+        </ul>
+
+        <div class="mt-5 pt-5">
+            <div class="text-white mb-4">
+                <p class="mb-1"><i class="fas fa-phone me-2"></i> +39 123 456 7890</p>
+                <p class="mb-1"><i class="fas fa-envelope me-2"></i> info@nicolavaia.com</p>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Via Roma, 123, Milano</p>
+            </div>
+
+            <div class="social-icons d-flex">
+                <a href="#" class="social-item me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-item me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-item me-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Hero Section with Carousel -->
+<section class="hero-section" id="home">
+    <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="hero-slide" style="background-image: url('assets/img/plastic-surgeon.jpg');">
+                    <div class="hero-content">
+                        <h2 data-i18n="about_title">Professionalità e Competenza</h2>
+                        <p data-i18n="about_subtitle">La tua salute e il tuo benessere sono la mia priorità</p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-light-outline">
+                                <span data-i18n="menu_chi_sono">Chi Sono</span>
+                            </a>
+                            <a href="#contacts" class="btn btn-light">
+                                <span data-i18n="contatti_title">Prenota</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="hero-slide" style="background-image: url('assets/img/aesthetic-surgery.jpg');">
+                    <div class="hero-content">
+                        <h2 data-i18n="estetica_title">Chirurgia Estetica</h2>
+                        <p data-i18n="estetica_subtitle">Bellezza naturale e armoniosa</p>
+                        <div class="hero-buttons">
+                            <a href="#chirurgia-estetica" class="btn btn-light-outline">
+                                <span>Scopri di più</span>
+                            </a>
+                            <a href="#contacts" class="btn btn-light">
+                                <span data-i18n="contatti_title">Prenota</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="hero-slide" style="background-image: url('assets/img/reconstructive-surgery.jpg');">
+                    <div class="hero-content">
+                        <h2 data-i18n="ricostruttiva_title">Chirurgia Ricostruttiva</h2>
+                        <p data-i18n="ricostruttiva_subtitle">Ripristino della forma e della funzionalità</p>
+                        <div class="hero-buttons">
+                            <a href="#chirurgia-ricostruttiva" class="btn btn-light-outline">
+                                <span>Scopri di più</span>
+                            </a>
+                            <a href="#contacts" class="btn btn-light">
+                                <span data-i18n="contatti_title">Prenota</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Controls -->
+        <div class="swiper-button-next hero-button-next"></div>
+        <div class="swiper-button-prev hero-button-prev"></div>
+
+        <!-- Scroll Down Button -->
+        <div class="scroll-down-button">
+            <a href="#about">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <!-- Static Mobile Hero Image -->
+    <div class="hero-mobile-image">
+        <div class="hero-mobile-content">
+            <h2 data-i18n="about_title">Professionalità e Competenza</h2>
+            <p data-i18n="about_subtitle">La tua salute e il tuo benessere sono la mia priorità</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-light-outline">
+                    <span data-i18n="menu_chi_sono">Chi Sono</span>
+                </a>
+                <a href="#contacts" class="btn btn-light">
+                    <span data-i18n="contatti_title">Prenota</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-container section-padding" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                <div class="img-hover-zoom">
+                    <img src="assets/img/doctor-profile.jpg" alt="Dr. Nicola Vaia" class="img-fluid profile-image">
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-i18n="about_title">Professionalità e Competenza</h2>
+                <h3 data-i18n="about_subtitle">La tua salute e il tuo benessere sono la mia priorità</h3>
+                <p data-i18n="about_content">
+                    Mi dedico ad aiutare i pazienti a raggiungere i loro obiettivi estetici e funzionali attraverso procedure chirurgiche all'avanguardia e un'attenzione personalizzata. Con anni di esperienza e formazione specialistica, offro una combinazione di competenza tecnica e sensibilità artistica per garantire risultati naturali e armonici. La mia filosofia si basa sul creare un rapporto di fiducia con ogni paziente, ascoltando attentamente le loro esigenze e fornendo soluzioni su misura.
+                </p>
+                <div class="mt-4">
+                    <a href="#contacts" class="btn btn-primary me-3 mb-3 mb-md-0">
+                        <span data-i18n="contatti_title">Prenota una Consulenza</span>
+                    </a>
+                    <a href="#chirurgia-del-lipedema" class="btn btn-outline">
+                        <span data-i18n="menu_lipedema">Chirurgia del Lipedema</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lipedema Surgery Section -->
+<section class="first-container section-padding bg-primary-light" id="chirurgia-del-lipedema">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+                <div class="img-hover-zoom">
+                    <img src="assets/img/lipedema-surgery.jpg" alt="Chirurgia del Lipedema" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-i18n="lipedema_title">Chirurgia del Lipedema</h2>
+                <h3 data-i18n="lipedema_subtitle">Trattamenti specializzati per il lipedema</h3>
+                <p data-i18n="lipedema_content">
+                    Il lipedema è una condizione cronica caratterizzata dall'accumulo anomalo di tessuto adiposo nelle gambe e talvolta nelle braccia. Offro trattamenti chirurgici avanzati per il lipedema, tra cui la liposuzione tumescente, per ridurre il dolore, migliorare la mobilità e l'aspetto estetico. La diagnosi precoce e un approccio multidisciplinare sono fondamentali per gestire efficacemente questa condizione e migliorare la qualità della vita dei pazienti.
+                </p>
+                <div class="mt-4">
+                    <a href="#contacts" class="btn btn-primary">
+                        <span data-i18n="contatti_title">Prenota una Consulenza</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reconstructive Surgery Section -->
+<section class="second-container section-padding" id="chirurgia-ricostruttiva">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                <div class="img-hover-zoom">
+                    <img src="assets/img/reconstructive-surgery.jpg" alt="Chirurgia Ricostruttiva" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-i18n="ricostruttiva_title">Chirurgia Ricostruttiva</h2>
+                <h3 data-i18n="ricostruttiva_subtitle">Ripristino della forma e della funzionalità</h3>
+                <p data-i18n="ricostruttiva_content">
+                    La chirurgia ricostruttiva mira a ripristinare la forma e la funzionalità di strutture corporee danneggiate da traumi, malattie o difetti congeniti. Mi specializzo in procedure ricostruttive avanzate, tra cui la ricostruzione del seno dopo mastectomia, la correzione di cicatrici, la ricostruzione dopo trauma e la correzione di difetti congeniti. Utilizzo tecniche innovative e un approccio personalizzato per garantire risultati ottimali e migliorare significativamente la qualità della vita dei miei pazienti.
+                </p>
+                <div class="mt-4">
+                    <a href="#contacts" class="btn btn-primary">
+                        <span data-i18n="contatti_title">Prenota una Consulenza</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Aesthetic Surgery Section -->
+<section class="third-container section-padding bg-secondary-light" id="chirurgia-estetica">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+                <div class="img-hover-zoom">
+                    <img src="assets/img/aesthetic-surgery.jpg" alt="Chirurgia Estetica" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-i18n="estetica_title">Chirurgia Estetica</h2>
+                <h3 data-i18n="estetica_subtitle">Bellezza naturale e armoniosa</h3>
+                <p data-i18n="estetica_content">
+                    La chirurgia estetica può contribuire significativamente a migliorare l'immagine corporea e la fiducia in sé stessi. Offro una vasta gamma di procedure estetiche del viso e del corpo, tra cui rinoplastica, lifting facciale, blefaroplastica, mastoplastica additiva e riduttiva, addominoplastica e liposuzione. Il mio approccio si basa sul rispetto dell'individualità di ciascun paziente, proponendo soluzioni personalizzate che valorizzano la bellezza naturale e preservano l'armonia delle proporzioni.
+                </p>
+                <div class="mt-4">
+                    <a href="#contacts" class="btn btn-primary">
+                        <span data-i18n="contatti_title">Prenota una Consulenza</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Aesthetic Medicine Section -->
+<section class="fourth-container section-padding" id="medicina-estetica">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                <div class="img-hover-zoom">
+                    <img src="assets/img/aesthetic-medicine.jpg" alt="Medicina Estetica" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-i18n="medicina_title">Medicina Estetica</h2>
+                <h3 data-i18n="medicina_subtitle">Trattamenti non chirurgici per il ringiovanimento</h3>
+                <p data-i18n="medicina_content">
+                    La medicina estetica offre soluzioni non chirurgiche o minimamente invasive per il ringiovanimento e il miglioramento dell'aspetto. I trattamenti includono filler dermici, tossina botulinica, peeling chimici, biorivitalizzazione e altri trattamenti avanzati. Questi interventi consentono di ottenere risultati significativi con tempi di recupero minimi, rappresentando un'opzione ideale per chi desidera migliorare il proprio aspetto senza ricorrere alla chirurgia o come complemento a procedure chirurgiche.
+                </p>
+                <div class="mt-4">
+                    <a href="#contacts" class="btn btn-primary">
+                        <span data-i18n="contatti_title">Prenota una Consulenza</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Cards Section -->
+<section class="section-padding bg-primary-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2>I Miei Servizi</h2>
+                <p>Esplora la gamma completa di servizi che offro per aiutarti a raggiungere i tuoi obiettivi di salute e bellezza.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Service Card 1 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                <div class="service-card-container">
+                    <img src="assets/img/service-face.jpg" alt="Chirurgia del Viso" class="service-card-image">
+                    <div class="service-card-overlay">
+                        <h3>Chirurgia del Viso</h3>
+                        <p>Procedure per ringiovanire e armonizzare i tratti del viso, come rinoplastica, lifting facciale e blefaroplastica.</p>
+                        <a href="#" class="service-card-btn">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="service-card-container">
+                    <img src="assets/img/service-body.jpg" alt="Chirurgia del Corpo" class="service-card-image">
+                    <div class="service-card-overlay">
+                        <h3>Chirurgia del Corpo</h3>
+                        <p>Interventi per rimodellare e migliorare la silhouette, come addominoplastica, liposuzione e lifting del corpo.</p>
+                        <a href="#" class="service-card-btn">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="service-card-container">
+                    <img src="assets/img/service-breast.jpg" alt="Chirurgia del Seno" class="service-card-image">
+                    <div class="service-card-overlay">
+                        <h3>Chirurgia del Seno</h3>
+                        <p>Procedure per migliorare, ridurre o ricostruire il seno, adattate alle esigenze di ogni paziente.</p>
+                        <a href="#" class="service-card-btn">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<!-- Rimosso come richiesto -->
+
+<!-- Contact Section -->
+<section class="fifth-container section-padding bg-primary-light" id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2 data-i18n="contatti_title">Prenota una Consulenza</h2>
+                <h3 data-i18n="contatti_subtitle">Sono qui per rispondere alle tue domande</h3>
+                <p data-i18n="contatti_content">
+                    Se desideri maggiori informazioni o vuoi prenotare una consulenza, non esitare a contattarmi. Sarò lieto di discutere le tue esigenze specifiche e fornirti tutte le informazioni necessarie sulle procedure disponibili, i tempi di recupero e i risultati attesi.
+                </p>
+
+                <div class="contact-info mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-center flex-column">
+                                <i class="fas fa-map-marker-alt mb-3 fa-2x text-primary"></i>
+                                <h4 class="contact-label">Indirizzo</h4>
+                                <p class="contact-detail">Via Roma, 123, Milano, Italia</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-center flex-column">
+                                <i class="fas fa-phone mb-3 fa-2x text-primary"></i>
+                                <h4 class="contact-label">Telefono</h4>
+                                <p class="contact-detail">+39 123 456 7890</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-center flex-column">
+                                <i class="fas fa-envelope mb-3 fa-2x text-primary"></i>
+                                <h4 class="contact-label">Email</h4>
+                                <p class="contact-detail">info@nicolavaia.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="mailto:info@nicolavaia.com" class="btn btn-primary btn-lg px-5">
+                            <i class="fas fa-envelope me-2"></i> Contattami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Map -->
+<section class="map-section">
+    <div class="container-fluid p-0">
+        <div class="map-container" style="height: 400px;">
+            <gmp-map center="41.857218,12.418735" zoom="15" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="41.857218,12.418735" title="European Hospital"></gmp-advanced-marker>
+            </gmp-map>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h4>Dr. Nicola Vaia</h4>
+                <p>Specialista in Chirurgia Plastica, Ricostruttiva ed Estetica</p>
+                <div class="social-icons">
+                    <a href="#" class="social-item"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-item"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-item"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h4>Servizi</h4>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#chirurgia-del-lipedema">Chirurgia del Lipedema</a></li>
+                    <li><a href="#chirurgia-ricostruttiva">Chirurgia Ricostruttiva</a></li>
+                    <li><a href="#chirurgia-estetica">Chirurgia Estetica</a></li>
+                    <li><a href="#medicina-estetica">Medicina Estetica</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4 mb-md-0">
+                <h4>Link Utili</h4>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#about">Chi Sono</a></li>
+                    <li><a href="#contacts">Contatti</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Termini e Condizioni</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Contatti</h4>
+                <p><i class="fas fa-map-marker-alt me-2"></i> Via Roma, 123, Milano</p>
+                <p><i class="fas fa-phone me-2"></i> +39 123 456 7890</p>
+                <p><i class="fas fa-envelope me-2"></i> info@nicolavaia.com</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center copyright">
+                <p data-i18n="footer_copyright">© 2025 Dr. Nicola Vaia - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" aria-label="Torna in cima">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- AOS - Animate On Scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbejOG6kAjhsdLxs04ARoKH-Wl0lzRbF8&callback=console.debug&libraries=maps,marker&v=beta">
+</script>
+
+<!-- Custom JS -->
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800
+        });
+
+        // Initialize Testimonials Swiper
+        const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        // Active menu item on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightMenuOnScroll() {
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightMenuOnScroll);
+
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    });
+</script>
+</body>
+</html>

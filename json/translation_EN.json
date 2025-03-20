@@ -1,50 +1,89 @@
 {
   "site_title": "Dr. Nicola Vaia - Plastic Surgeon",
-  "site_description": "Reconstructive and Aesthetic Plastic Surgery",
-  
+  "site_description": "Reconstructive and Aesthetic Plastic Surgery. Specialist in lipedema surgery, reconstructive and aesthetic surgery.",
+  "meta_keywords": "plastic surgeon, aesthetic surgery, reconstructive surgery, lipedema, aesthetic medicine, Milan",
+
   "menu_chi_sono": "About Me",
   "menu_lipedema": "Lipedema Surgery",
   "menu_ricostruttiva": "Reconstructive Surgery",
   "menu_estetica": "Aesthetic Surgery",
   "menu_medicina": "Aesthetic Medicine",
   "menu_contatti": "Contact",
-  
+
   "header_title": "Dr. Nicola Vaia",
   "header_subtitle": "Reconstructive and Aesthetic Plastic Surgery",
-  
+
   "about_title": "Professionalism and Expertise",
   "about_subtitle": "Your health and wellbeing are my priority",
   "about_content": "I am dedicated to helping patients achieve their aesthetic and functional goals through cutting-edge surgical procedures and personalized care. With years of experience and specialized training, I offer a combination of technical expertise and artistic sensitivity to ensure natural and harmonious results. My philosophy is based on creating a trusting relationship with each patient, carefully listening to their needs and providing tailored solutions.",
-  
+  "about_button": "Learn More",
+
   "lipedema_title": "Lipedema Surgery",
   "lipedema_subtitle": "Specialized treatments for lipedema",
   "lipedema_content": "Lipedema is a chronic condition characterized by the abnormal accumulation of adipose tissue in the legs and sometimes arms. I offer advanced surgical treatments for lipedema, including tumescent liposuction, to reduce pain, improve mobility and aesthetic appearance. Early diagnosis and a multidisciplinary approach are essential to effectively manage this condition and improve patients' quality of life.",
-  
+  "lipedema_button": "Book an Assessment",
+
   "ricostruttiva_title": "Reconstructive Surgery",
   "ricostruttiva_subtitle": "Restoring form and function",
   "ricostruttiva_content": "Reconstructive surgery aims to restore the form and function of body structures damaged by trauma, disease, or congenital defects. I specialize in advanced reconstructive procedures, including breast reconstruction after mastectomy, scar correction, post-trauma reconstruction, and correction of congenital defects. I use innovative techniques and a personalized approach to ensure optimal results and significantly improve my patients' quality of life.",
-  
+  "ricostruttiva_button": "Request Information",
+
   "estetica_title": "Aesthetic Surgery",
   "estetica_subtitle": "Natural and harmonious beauty",
   "estetica_content": "Aesthetic surgery can significantly improve body image and self-confidence. I offer a wide range of aesthetic procedures for the face and body, including rhinoplasty, facelift, blepharoplasty, breast augmentation and reduction, abdominoplasty, and liposuction. My approach is based on respecting each patient's individuality, proposing personalized solutions that enhance natural beauty and preserve harmonious proportions.",
-  
+  "estetica_button": "Discover Treatments",
+
   "medicina_title": "Aesthetic Medicine",
   "medicina_subtitle": "Non-surgical treatments for rejuvenation",
   "medicina_content": "Aesthetic medicine offers non-surgical or minimally invasive solutions for rejuvenation and appearance enhancement. Treatments include dermal fillers, botulinum toxin, chemical peels, biorevitalization, and other advanced treatments. These interventions allow for significant results with minimal recovery time, representing an ideal option for those looking to improve their appearance without surgery or as a complement to surgical procedures.",
-  
+  "medicina_button": "Explore Options",
+
+  "servizi_title": "My Services",
+  "servizi_subtitle": "Explore the full range of services I offer to help you achieve your health and beauty goals.",
+
+  "servizio_viso_title": "Facial Surgery",
+  "servizio_viso_desc": "Procedures to rejuvenate and harmonize facial features, such as rhinoplasty, facelift, and blepharoplasty.",
+
+  "servizio_corpo_title": "Body Surgery",
+  "servizio_corpo_desc": "Interventions to reshape and improve body contours, such as abdominoplasty, liposuction, and body lifting.",
+
+  "servizio_seno_title": "Breast Surgery",
+  "servizio_seno_desc": "Procedures to enhance, reduce, or reconstruct the breast, tailored to each patient's needs.",
+
   "contatti_title": "Book a Consultation",
   "contatti_subtitle": "I'm here to answer your questions",
   "contatti_content": "If you would like more information or want to book a consultation, please don't hesitate to contact me. I will be happy to discuss your specific needs and provide you with all the necessary information about available procedures, recovery times, and expected results.",
-  
+  "contatti_button": "Contact Me",
+
   "form_nome": "First Name",
   "form_cognome": "Last Name",
   "form_email": "Email",
   "form_telefono": "Phone",
   "form_messaggio": "Message",
+  "form_privacy": "I have read and accept the privacy policy",
   "form_invia": "Send",
-  
+  "form_success": "Message sent!",
+  "form_error": "An error occurred. Please try again.",
+
   "footer_copyright": "© 2025 Dr. Nicola Vaia - All rights reserved",
   "footer_privacy": "Privacy Policy",
   "footer_cookie": "Cookie Policy",
-  "footer_termini": "Terms and Conditions"
+  "footer_termini": "Terms and Conditions",
+
+  "indirizzo_title": "Address",
+  "telefono_title": "Phone",
+  "email_title": "Email",
+
+  "accessibility_menu": "Navigation menu",
+  "accessibility_skip": "Skip to main content",
+  "accessibility_language": "Change language",
+
+  "cookie_notice": "This site uses technical cookies to improve user experience",
+  "cookie_accept": "Accept",
+  "cookie_more": "More information",
+
+  "back_to_top": "Back to top",
+  "loading": "Loading...",
+  "scopri_di_piu": "Learn more",
+  "link_utili_title": "Useful Links"
 }

@@ -1046,6 +1046,10 @@ footer .copyright {
         padding-top: 100px; /* Aggiustato per l'header */
     }
 
+    .hero-mobile-content h2{
+        color: white !important;
+    }
+
     .language-selector {
         margin-top: 0.5rem;
     }

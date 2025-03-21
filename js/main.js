@@ -361,14 +361,40 @@ const DoctorSite = (function() {
         }
     };
 
-    // Miglioramenti per accessibilità
+// Miglioramenti per accessibilità
     const AccessibilityImprovements = {
         init: function() {
             // Focus trap per il menu laterale per migliorare la navigazione da tastiera
             const sideMenu = document.getElementById('sideMenu');
             if (!sideMenu) return;
 
+            // Salva la posizione di scroll originale
+            let scrollPosition = 0;
+
             // Migliora il focus quando il menu laterale è aperto
+            sideMenu.addEventListener('show.bs.offcanvas', () => {
+                // Salva la posizione di scroll corrente prima di bloccare
+                scrollPosition = window.pageYOffset;
+
+                // Blocca lo scroll in modo più efficace
+                document.body.style.overflow = 'hidden';
+                document.body.style.position = 'fixed';
+                document.body.style.top = `-${scrollPosition}px`;
+                document.body.style.width = '100%';
+            });
+
+            // Gestisci il focus quando il menu è chiuso
+            sideMenu.addEventListener('hide.bs.offcanvas', () => {
+                // Ripristina lo scroll
+                document.body.style.overflow = '';
+                document.body.style.position = '';
+                document.body.style.top = '';
+                document.body.style.width = '';
+
+                // Ripristina la posizione di scroll
+                window.scrollTo(0, scrollPosition);
+            });
+
             sideMenu.addEventListener('shown.bs.offcanvas', () => {
                 // Trova il primo elemento focusabile nel menu
                 const firstFocusable = sideMenu.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
@@ -377,7 +403,6 @@ const DoctorSite = (function() {
                 }
             });
 
-            // Gestisci il focus quando il menu è chiuso
             sideMenu.addEventListener('hidden.bs.offcanvas', () => {
                 // Ripristina il focus al pulsante che ha aperto il menu
                 const openButton = document.querySelector('[data-bs-target="#sideMenu"]');

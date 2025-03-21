@@ -268,7 +268,7 @@ header.scrolled .logo-literal h1 span {
 .language-selector {
     position: relative;
     display: inline-block;
-    min-width: 80px;
+    width: 63px;
     border-bottom: 1px solid rgba(67, 70, 85, 0.3);
     transition: all 0.3s ease;
 }
@@ -293,6 +293,12 @@ select#language-selector {
 }
 
 /* Hamburger menu stile */
+@media (max-width: 768px){
+    .toggler-container{
+        width: 63px;
+    }
+}
+
 .navbar-toggler {
     border: 0 none;
     background-color: transparent;
@@ -303,7 +309,6 @@ select#language-selector {
 
 .navbar-toggler:hover, .navbar-toggler:focus {
     background-color: rgba(30, 52, 101, 0.1);
-    border-radius: 50%;
 }
 
 .navbar-toggler i {
@@ -1317,7 +1322,7 @@ input, select, textarea {
 }
 
 
-@media (max-width: 489px) {
+@media (max-width: 768px) {
     .about-container .btn {
         margin-right: 0 !important;
     }

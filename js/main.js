@@ -51,6 +51,7 @@ const DoctorSite = (function() {
     };
 
     // Gestione del selettore di lingua
+// Gestione del selettore di lingua
     const LanguageSelector = {
         init: function() {
             const langSelector = document.getElementById('language-selector');
@@ -86,9 +87,15 @@ const DoctorSite = (function() {
                     }
                 }
             });
+
+            // Aggiungiamo un event listener per il cambio di selezione
+            langSelector.addEventListener('change', function() {
+                if (typeof TranslationManager !== 'undefined') {
+                    TranslationManager.changeLanguage(this.value);
+                }
+            });
         }
     };
-
     // Animazioni ottimizzate di scroll
     const ScrollAnimations = {
         init: function() {
@@ -270,6 +277,50 @@ const DoctorSite = (function() {
         }
     };
 
+    // Set up smooth scrolling - fixed for mobile
+    const SmoothScroll = {
+        init: function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+
+                    // Ignora gli href vuoti o "#"
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        // Chiudi il menu mobile se è aperto
+                        const sideMenu = document.getElementById('sideMenu');
+                        if (sideMenu) {
+                            const bsOffcanvas = bootstrap.Offcanvas.getInstance(sideMenu);
+                            if (bsOffcanvas) {
+                                bsOffcanvas.hide();
+                            }
+                        }
+
+                        // Calcola l'offset a causa dell'header fisso
+                        const header = document.querySelector('header');
+                        const headerHeight = header ? header.offsetHeight : 0;
+
+                        // Aggiungiamo un po' di ritardo al calcolo su mobile
+                        setTimeout(() => {
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 20;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }, 300); // Piccolo delay per permettere la chiusura del menu
+                    }
+                });
+            });
+        }
+    };
+
     // Miglioramenti per prestazioni
     const PerformanceOptimizations = {
         init: function() {
@@ -351,6 +402,124 @@ const DoctorSite = (function() {
         }
     };
 
+    // Inizializzazione Swiper
+    const SwiperInit = {
+        init: function() {
+            // Verifica se Swiper è disponibile e se ci sono gli elementi necessari
+            if (typeof Swiper === 'undefined') return;
+
+            const heroSwiperElement = document.querySelector('.hero-swiper');
+            if (!heroSwiperElement) return;
+
+            // Inizializza Hero Swiper
+            const heroSwiper = new Swiper('.hero-swiper', {
+                direction: 'horizontal',
+                loop: true,
+                autoplay: {
+                    delay: 6000,
+                    disableOnInteraction: false,
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                speed: 1200,
+                pagination: false,
+                navigation: {
+                    nextEl: '.hero-button-next',
+                    prevEl: '.hero-button-prev',
+                },
+                on: {
+                    slideChangeTransitionStart: function() {
+                        // Anima il contenuto della slide quando cambia
+                        const activeSlide = document.querySelector('.swiper-slide-active .hero-content');
+                        if (activeSlide) {
+                            activeSlide.style.opacity = '0';
+                            activeSlide.style.transform = 'translateY(30px)';
+
+                            setTimeout(() => {
+                                activeSlide.style.opacity = '1';
+                                activeSlide.style.transform = 'translateY(0)';
+                                activeSlide.style.transition = 'all 1s ease';
+                            }, 300);
+                        }
+                    }
+                }
+            });
+        }
+    };
+
+    // Back to Top e WhatsApp Button
+    const FloatingButtons = {
+        init: function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            const whatsappButton = document.querySelector('.whatsapp-button');
+            const footer = document.querySelector('footer');
+
+            if (!backToTopButton || !footer) return;
+
+            let scrollThrottleTimer;
+
+            // Funzione ottimizzata per controllare la visibilità dei pulsanti
+            const checkButtonsVisibility = () => {
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+
+                // Back to top button
+                if (scrollTop > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+
+                // WhatsApp button se esiste
+                if (whatsappButton) {
+                    if (scrollTop > 300 && scrollTop + windowHeight < footerTop) {
+                        whatsappButton.classList.add('show');
+                    } else {
+                        whatsappButton.classList.remove('show');
+                    }
+                }
+            };
+
+            // Event listener con throttling
+            window.addEventListener('scroll', () => {
+                if (scrollThrottleTimer) return;
+
+                scrollThrottleTimer = setTimeout(() => {
+                    checkButtonsVisibility();
+                    scrollThrottleTimer = null;
+                }, 100);
+            });
+
+            // Gestisci il click su back-to-top
+            if (backToTopButton) {
+                backToTopButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // Verifica visibilità iniziale
+            checkButtonsVisibility();
+        }
+    };
+
+    // Inizializzazione AOS (Animate on Scroll)
+    const AOSInit = {
+        init: function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    once: true,
+                    offset: 100,
+                    duration: 800,
+                    throttleDelay: 99  // Aumenta il delay per migliorare le performance
+                });
+            }
+        }
+    };
+
     // Inizializzazione principale
     const init = function() {
         // Cache elementi DOM principali
@@ -364,10 +533,14 @@ const DoctorSite = (function() {
         PerformanceOptimizations.init();
         StickyNavigation.init();
         LanguageSelector.init();
+        SmoothScroll.init();
         ScrollAnimations.init();
         HeroAnimations.init();
+        SwiperInit.init();
         ContactForm.init();
         AccessibilityImprovements.init();
+        FloatingButtons.init();
+        AOSInit.init();
 
         console.log('Tutti i moduli JavaScript sono stati inizializzati');
     };
@@ -375,6 +548,7 @@ const DoctorSite = (function() {
     // Metodo pubblico per reinizializzare componenti dopo cambi dinamici
     const refresh = function() {
         ScrollAnimations.init();
+        SmoothScroll.init();
     };
 
     // API pubblica
@@ -404,51 +578,3 @@ if ('requestIdleCallback' in window) {
         });
     }, { timeout: 2000 });
 }
-
-// Gestione della visibilità del pulsante WhatsApp
-document.addEventListener('DOMContentLoaded', function() {
-    const whatsappButton = document.querySelector('.whatsapp-button');
-    const footer = document.querySelector('footer');
-    const backToTopButton = document.querySelector('.back-to-top');
-
-    if (!whatsappButton || !footer || !backToTopButton) return;
-
-    let lastScrollTop = 0;
-    let scrollThrottleTimer;
-
-    // Funzione per controllare la visibilità del pulsante WhatsApp
-    function checkWhatsAppButtonVisibility() {
-        const scrollTop = window.scrollY;
-        const windowHeight = window.innerHeight;
-        const footerTop = footer.getBoundingClientRect().top + window.scrollY;
-
-        // Mostra il pulsante solo quando si è scrollato oltre una certa soglia
-        // e non si è arrivati al footer
-        if (scrollTop > 300 && scrollTop + windowHeight < footerTop) {
-            whatsappButton.classList.add('show');
-        } else {
-            whatsappButton.classList.remove('show');
-        }
-
-        // Sincronizza la visibilità con il pulsante back-to-top
-        if (backToTopButton.classList.contains('show') && scrollTop + windowHeight < footerTop) {
-            whatsappButton.classList.add('show');
-        }
-    }
-
-    // Usa throttling per ottimizzare le prestazioni durante lo scroll
-    window.addEventListener('scroll', function() {
-        if (scrollThrottleTimer) return;
-
-        scrollThrottleTimer = setTimeout(function() {
-            checkWhatsAppButtonVisibility();
-            scrollThrottleTimer = null;
-        }, 100);
-    });
-
-    // Controlla la visibilità anche al caricamento della pagina
-    checkWhatsAppButtonVisibility();
-
-    // Controlla la visibilità al ridimensionamento della finestra
-    window.addEventListener('resize', checkWhatsAppButtonVisibility);
-});

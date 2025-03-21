@@ -21,22 +21,18 @@
   "lipedema_title": "Lipedema Surgery",
   "lipedema_subtitle": "Specialized treatments for lipedema",
   "lipedema_content": "Lipedema is a chronic condition characterized by the abnormal accumulation of adipose tissue in the legs and sometimes arms. I offer advanced surgical treatments for lipedema, including tumescent liposuction, to reduce pain, improve mobility and aesthetic appearance. Early diagnosis and a multidisciplinary approach are essential to effectively manage this condition and improve patients' quality of life.",
-  "lipedema_button": "Book an Assessment",
 
   "ricostruttiva_title": "Reconstructive Surgery",
   "ricostruttiva_subtitle": "Restoring form and function",
   "ricostruttiva_content": "Reconstructive surgery aims to restore the form and function of body structures damaged by trauma, disease, or congenital defects. I specialize in advanced reconstructive procedures, including breast reconstruction after mastectomy, scar correction, post-trauma reconstruction, and correction of congenital defects. I use innovative techniques and a personalized approach to ensure optimal results and significantly improve my patients' quality of life.",
-  "ricostruttiva_button": "Request Information",
 
   "estetica_title": "Aesthetic Surgery",
   "estetica_subtitle": "Natural and harmonious beauty",
   "estetica_content": "Aesthetic surgery can significantly improve body image and self-confidence. I offer a wide range of aesthetic procedures for the face and body, including rhinoplasty, facelift, blepharoplasty, breast augmentation and reduction, abdominoplasty, and liposuction. My approach is based on respecting each patient's individuality, proposing personalized solutions that enhance natural beauty and preserve harmonious proportions.",
-  "estetica_button": "Discover Treatments",
 
   "medicina_title": "Aesthetic Medicine",
   "medicina_subtitle": "Non-surgical treatments for rejuvenation",
   "medicina_content": "Aesthetic medicine offers non-surgical or minimally invasive solutions for rejuvenation and appearance enhancement. Treatments include dermal fillers, botulinum toxin, chemical peels, biorevitalization, and other advanced treatments. These interventions allow for significant results with minimal recovery time, representing an ideal option for those looking to improve their appearance without surgery or as a complement to surgical procedures.",
-  "medicina_button": "Explore Options",
 
   "servizi_title": "My Services",
   "servizi_subtitle": "Explore the full range of services I offer to help you achieve your health and beauty goals.",
@@ -55,16 +51,6 @@
   "contatti_content": "If you would like more information or want to book a consultation, please don't hesitate to contact me. I will be happy to discuss your specific needs and provide you with all the necessary information about available procedures, recovery times, and expected results.",
   "contatti_button": "Contact Me",
 
-  "form_nome": "First Name",
-  "form_cognome": "Last Name",
-  "form_email": "Email",
-  "form_telefono": "Phone",
-  "form_messaggio": "Message",
-  "form_privacy": "I have read and accept the privacy policy",
-  "form_invia": "Send",
-  "form_success": "Message sent!",
-  "form_error": "An error occurred. Please try again.",
-
   "footer_copyright": "© 2025 Dr. Nicola Vaia - All rights reserved",
   "footer_privacy": "Privacy Policy",
   "footer_cookie": "Cookie Policy",
@@ -77,10 +63,6 @@
   "accessibility_menu": "Navigation menu",
   "accessibility_skip": "Skip to main content",
   "accessibility_language": "Change language",
-
-  "cookie_notice": "This site uses technical cookies to improve user experience",
-  "cookie_accept": "Accept",
-  "cookie_more": "More information",
 
   "back_to_top": "Back to top",
   "loading": "Loading...",

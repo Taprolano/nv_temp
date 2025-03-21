@@ -254,6 +254,16 @@ header.scrolled .logo-literal h1 span {
     font-size: 26px;
 }
 
+/* Logo Image for mobile */
+.logo-image {
+    text-align: center;
+}
+
+.logo-image img {
+    max-height: 50px;
+    width: auto;
+}
+
 /* Language Selector */
 .language-selector {
     position: relative;
@@ -294,6 +304,11 @@ select#language-selector {
 .navbar-toggler:hover, .navbar-toggler:focus {
     background-color: rgba(30, 52, 101, 0.1);
     border-radius: 50%;
+}
+
+.navbar-toggler i {
+    font-size: 24px;
+    color: var(--primary-color);
 }
 
 /* Menu Laterale */
@@ -962,23 +977,15 @@ footer .copyright {
 
     header {
         height: auto;
-        min-height: 100px;
-        padding: 1rem 0;
+        min-height: 70px;
+        padding: 10px 0;
     }
 
     header .container-fluid {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-    }
-
-    .logo-literal {
-        margin-bottom: 1rem;
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo-literal h1 span {
-        font-size: 34px;
+        justify-content: space-between;
+        padding: 0 15px;
     }
 
     header.scrolled {
@@ -986,8 +993,13 @@ footer .copyright {
         min-height: 60px;
     }
 
-    header.scrolled .logo-literal h1 span {
-        font-size: 28px;
+    /* Force visibility of language selector on mobile */
+    header.scrolled .language-selector {
+        opacity: 1 !important;
+        visibility: visible !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .hero-swiper {
@@ -1031,19 +1043,6 @@ footer .copyright {
 
     .language-selector {
         margin-top: 0.5rem;
-    }
-
-    /* Header compatto in scroll */
-    header.scrolled .language-selector {
-        opacity: 0;
-        visibility: hidden;
-        height: 0;
-        margin: 0;
-        padding: 0;
-    }
-
-    header.scrolled .logo-literal {
-        margin-bottom: 0;
     }
 }
 
@@ -1218,4 +1217,101 @@ footer .copyright {
 
 .whatsapp-button.show {
     animation: pulse 2s infinite;
+}
+
+/* Prevenzione zoom su doppio tap */
+* {
+    touch-action: manipulation;
+}
+
+/* Disabilitazione del doppio tap sui collegamenti */
+a, button, .btn, [role="button"] {
+    touch-action: manipulation;
+}
+
+/* Per browser iOS */
+input, select, textarea {
+    font-size: 16px; /* Previene lo zoom sui campi di input su iOS */
+}
+
+/* Modifiche specifiche per risolvere il problema dei contenuti non visibili */
+
+/* Aggiustiamo il padding delle sezioni per adattarsi al nuovo header mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        margin-top: 70px; /* Aggiustato per corrispondere all'altezza dell'header mobile */
+    }
+
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .about-container {
+        padding-top: 5rem; /* Aggiungiamo più spazio sopra la prima sezione */
+    }
+
+    /* Correggiamo la posizione del contenuto della hero mobile */
+    .hero-mobile-content {
+        padding-top: 50px; /* Ridotto da 100px per evitare troppo spazio vuoto */
+    }
+
+    /* Migliorare la visibilità delle sezioni animate */
+    .section-animate {
+        opacity: 1; /* Rendiamo le sezioni sempre visibili su mobile per evitare problemi */
+        transform: translateY(0);
+    }
+
+    /* Fix per lo scorrimento fluido */
+    html, body {
+        scroll-padding-top: 80px; /* Aggiunge padding al di sopra delle sezioni quando si fa scroll */
+    }
+}
+
+/* Altri fix generali */
+.card, .service-card-container, .img-hover-zoom {
+    z-index: 1; /* Assicuriamoci che abbiano un z-index per non essere coperti */
+}
+
+/* Miglioriamo le animazioni AOS su mobile */
+@media (max-width: 768px) {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: translateZ(0) !important;
+        transition: none !important;
+    }
+}
+
+/* Assicuriamoci che l'header mobile non copra il contenuto */
+@media (max-width: 768px) {
+    header {
+        z-index: 1050 !important; /* Aumentato il z-index per evitare sovrapposizioni */
+    }
+}
+
+/* Fix per le icone social nel menu laterale */
+.side-menu .social-icons {
+    display: flex;
+}
+
+.side-menu .social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.side-menu .social-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.side-menu .social-item i {
+    font-size: 16px;
 }

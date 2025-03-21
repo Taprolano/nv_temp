@@ -21,22 +21,18 @@
   "lipedema_title": "Chirurgia del Lipedema",
   "lipedema_subtitle": "Trattamenti specializzati per il lipedema",
   "lipedema_content": "Il lipedema è una condizione cronica caratterizzata dall'accumulo anomalo di tessuto adiposo nelle gambe e talvolta nelle braccia. Offro trattamenti chirurgici avanzati per il lipedema, tra cui la liposuzione tumescente, per ridurre il dolore, migliorare la mobilità e l'aspetto estetico. La diagnosi precoce e un approccio multidisciplinare sono fondamentali per gestire efficacemente questa condizione e migliorare la qualità della vita dei pazienti.",
-  "lipedema_button": "Prenota una valutazione",
 
   "ricostruttiva_title": "Chirurgia Ricostruttiva",
   "ricostruttiva_subtitle": "Ripristino della forma e della funzionalità",
   "ricostruttiva_content": "La chirurgia ricostruttiva mira a ripristinare la forma e la funzionalità di strutture corporee danneggiate da traumi, malattie o difetti congeniti. Mi specializzo in procedure ricostruttive avanzate, tra cui la ricostruzione del seno dopo mastectomia, la correzione di cicatrici, la ricostruzione dopo trauma e la correzione di difetti congeniti. Utilizzo tecniche innovative e un approccio personalizzato per garantire risultati ottimali e migliorare significativamente la qualità della vita dei miei pazienti.",
-  "ricostruttiva_button": "Richiedi informazioni",
 
   "estetica_title": "Chirurgia Estetica",
   "estetica_subtitle": "Bellezza naturale e armoniosa",
   "estetica_content": "La chirurgia estetica può contribuire significativamente a migliorare l'immagine corporea e la fiducia in sé stessi. Offro una vasta gamma di procedure estetiche del viso e del corpo, tra cui rinoplastica, lifting facciale, blefaroplastica, mastoplastica additiva e riduttiva, addominoplastica e liposuzione. Il mio approccio si basa sul rispetto dell'individualità di ciascun paziente, proponendo soluzioni personalizzate che valorizzano la bellezza naturale e preservano l'armonia delle proporzioni.",
-  "estetica_button": "Scopri i trattamenti",
 
   "medicina_title": "Medicina Estetica",
   "medicina_subtitle": "Trattamenti non chirurgici per il ringiovanimento",
   "medicina_content": "La medicina estetica offre soluzioni non chirurgiche o minimamente invasive per il ringiovanimento e il miglioramento dell'aspetto. I trattamenti includono filler dermici, tossina botulinica, peeling chimici, biorivitalizzazione e altri trattamenti avanzati. Questi interventi consentono di ottenere risultati significativi con tempi di recupero minimi, rappresentando un'opzione ideale per chi desidera migliorare il proprio aspetto senza ricorrere alla chirurgia o come complemento a procedure chirurgiche.",
-  "medicina_button": "Esplora le opzioni",
 
   "servizi_title": "I Miei Servizi",
   "servizi_subtitle": "Esplora la gamma completa di servizi che offro per aiutarti a raggiungere i tuoi obiettivi di salute e bellezza.",
@@ -55,16 +51,6 @@
   "contatti_content": "Se desideri maggiori informazioni o vuoi prenotare una consulenza, non esitare a contattarmi. Sarò lieto di discutere le tue esigenze specifiche e fornirti tutte le informazioni necessarie sulle procedure disponibili, i tempi di recupero e i risultati attesi.",
   "contatti_button": "Contattami",
 
-  "form_nome": "Nome",
-  "form_cognome": "Cognome",
-  "form_email": "Email",
-  "form_telefono": "Telefono",
-  "form_messaggio": "Messaggio",
-  "form_privacy": "Ho letto e accetto la privacy policy",
-  "form_invia": "Invia",
-  "form_success": "Messaggio inviato!",
-  "form_error": "Si è verificato un errore. Riprova.",
-
   "footer_copyright": "© 2025 Dr. Nicola Vaia - Tutti i diritti riservati",
   "footer_privacy": "Privacy Policy",
   "footer_cookie": "Cookie Policy",
@@ -77,10 +63,6 @@
   "accessibility_menu": "Menu di navigazione",
   "accessibility_skip": "Vai al contenuto principale",
   "accessibility_language": "Cambia lingua",
-
-  "cookie_notice": "Questo sito utilizza cookie tecnici per migliorare l'esperienza utente",
-  "cookie_accept": "Accetto",
-  "cookie_more": "Maggiori informazioni",
 
   "back_to_top": "Torna in cima",
   "loading": "Caricamento...",

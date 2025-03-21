@@ -1315,3 +1315,10 @@ input, select, textarea {
 .side-menu .social-item i {
     font-size: 16px;
 }
+
+
+@media (max-width: 489px) {
+    .about-container .btn {
+        margin-right: 0 !important;
+    }
+}

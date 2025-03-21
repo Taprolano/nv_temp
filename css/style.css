@@ -1128,7 +1128,7 @@ footer .copyright {
 /* Ottimizzazione immagini su schermi hiDPI */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero-slide, .hero-mobile-image {
-        background-image: url('assets/img/plastic-surgeon@2x.jpg');
+        background-image: url('../assets/img/plastic-surgeon@2x.jpg');
     }
 }
 
